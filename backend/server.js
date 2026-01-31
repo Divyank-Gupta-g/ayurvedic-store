@@ -55,7 +55,6 @@ app.use('/api/address', addressRouter)
 
 // order route
 import orderRouter from './routes/orderRoute.js';
-import { stripeWebhooks } from './controllers/orderController.js';
 app.use('/api/order', orderRouter)
 
 app.listen(PORT, () => {
